@@ -1,7 +1,7 @@
-function testTmt(a,b){
+function testTmt(J,S){
 	var count = 0 ;
-	var arrA =  a.split('');
-	var arrB =  b.split('');
+	var arrA =  J.split('');
+	var arrB =  S.split('');
 	for (i = 0; i < arrB.length; i++) {
 		for (j = 0; j < arrA.length; j++) {
 			if(arrA[j] == arrB[i]){
