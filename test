@@ -1,13 +1,9 @@
-function testTmt(J,S){
+function tmtTest(S,J){
 	var count = 0 ;
-	var arrA =  J.split('');
-	var arrB =  S.split('');
-	for (i = 0; i < arrB.length; i++) {
-		for (j = 0; j < arrA.length; j++) {
-			if(arrA[j] == arrB[i]){
-				count++;
-			}
+	[...J].map(function(x){
+		if(S.indexOf(x) !== -1){
+			count++;
 		}
-	}
+	})
 	return count;
 }
