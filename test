@@ -1,0 +1,13 @@
+function testTmt(a,b){
+	var count = 0 ;
+	var arrA =  a.split('');
+	var arrB =  b.split('');
+	for (i = 0; i < arrB.length; i++) {
+		for (j = 0; j < arrA.length; j++) {
+			if(arrA[j] == arrB[i]){
+				count++;
+			}
+		}
+	}
+	return count;
+}
